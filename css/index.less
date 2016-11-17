@@ -68,8 +68,8 @@ html, body {
           color: @color-body;
           background: @color-white;
           i {
-            background-position: -26px -130px;
-          }
+              background-position: -26px -130px;
+            }
         }
       }
     }
@@ -114,10 +114,68 @@ html, body {
             margin-right: 3px;
             &:hover {
               color: @color-body;
+              .bottom{
+
+                display: block;
+              }
+
+            }
+            .bottom{
+              display: none;
+              z-index: 222;
+              width: 1366px;
+              height: 230px;
+              background: @color-white;
+              position: absolute;
+              top: 80px;
+              left: -270px;
+              border-top: 1px solid #e0e0e0;
+              .btt{
+                height: 230px;
+                position: relative;
+                margin: 35px 56px 0 100px;
+                li{
+                  float: left;
+                  img{
+                    float: left;
+                    width: 160px;
+                    height: 110px;
+                  }
+                  .left{
+                    position: absolute;
+                    top:120px;
+                    margin-left:64px;
+                    display: block;
+                    margin-top:-20px;
+                    font-size: 14px;
+                    color: #7b7b7b;
+                  }
+                  .right{
+                    .left;
+                    color: @color-body;
+                    margin-top: 5px;
+                    margin-left:54px;
+
+
+
+                  }
+                  span{
+                    display: inline-block;
+                    height: 100px;
+                    border-left: 1px solid #e0e0e0;
+                    width: 2px;
+
+                  }
+                }
+
+              }
             }
           }
         }
+
+
       }
+
     }
     .wrapR {
       float: right;
